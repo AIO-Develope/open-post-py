@@ -1,0 +1,24 @@
+import argparse
+
+def getarg(req):
+    # Create ArgumentParser object
+    parser = argparse.ArgumentParser()
+
+    # Define command-line arguments
+    parser.add_argument("-s", "--server", action="store_true", help="Run the app in Server mode")
+
+    # Parse the command-line arguments
+    args = parser.parse_args()
+
+    # Access the values of the arguments
+    server_mode = args.server
+
+    if req is "mode":
+        
+        if server_mode:
+            return("server")
+        else:
+            return("client")
+
+if __name__ == "__main__":
+    getarg()
