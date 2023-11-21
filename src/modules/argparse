@@ -13,12 +13,8 @@ def getarg(req):
     # Access the values of the arguments
     server_mode = args.server
 
-    if req is "mode":
-        
+    if req == "mode":
         if server_mode:
-            return("server")
+            return "server"
         else:
-            return("client")
-
-if __name__ == "__main__":
-    getarg()
+            return "client"

@@ -1,8 +1,9 @@
-from argparse import getarg
+
+
+
 
 def main():
-
-    getarg("server")
+    print("test")
 
 
 if __name__ == "__main__":
